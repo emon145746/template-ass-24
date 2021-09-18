@@ -259,15 +259,17 @@ body{
     font-size: 25px;
     transition: .5s;
 }
-.cards p{}
-.cards_1{
+
+.cards_item{
+    z-index: 9;
     position: relative;
 }
 
-.cards_1 .image{
+.cards_item .image{
     position: absolute;
     top: 82px;
     left: -59px;
+    z-index: -9;
 }
 
 
