@@ -1,0 +1,372 @@
+body{
+    font-family: 'Spartan', sans-serif;
+}
+
+
+
+/* --------------header----------- */
+
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #e7e6e6;
+    padding: 5px;
+}
+.navbar ul{
+    padding-left:0 ;
+    list-style: none;
+    margin-left: auto;
+}
+.navbar img{
+    width: 100px;
+}
+.navbar ul li {
+    padding: 19px;
+    display: inline-block;
+    position: relative;
+}
+
+.navbar ul li::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #9d8fec;
+    position: absolute;
+    top: 111%;
+    left: 15%;
+    transition: .4s;
+}
+
+.navbar ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    font-size: 15px;
+    transition: .4s;
+}
+.navbar ul li:first-child a{
+    color: #6e8ef1;
+}
+
+.navbar ul li:hover::after{
+    width: 70%;
+}
+.navbar ul li:first-child .first_child::after{
+    content: "";
+    width: 70%;
+    height: 2px;
+    background-color: #9d8fec;
+    position: absolute;
+    top: 111%;
+    left: 15%;
+}
+
+.navbar .btn {
+    background: #fff;
+    color: #3763eb;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin-left: 30px;
+    position: relative;
+    z-index: 1;
+    transition: .4s;
+    overflow: hidden;
+}
+.navbar .btn::after{
+    content: "";
+    width: 0;
+    height: 100%;
+    background-color: #9d8fec;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .4s;
+}
+.navbar .btn:hover{
+    color: #fff;
+}
+.navbar .btn:hover::after{
+    width: 100%;
+}
+
+
+
+/* -------------dropdown----------- */
+
+.navbar ul li{
+    position: relative;
+}
+.navbar ul li ul {
+    position: absolute;
+    width: 205px;
+    z-index: 9;
+    background-color: #1247e7;
+    border: 20px solid #fff;
+    top: 115%;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+.navbar ul li ul li{}
+.navbar ul li ul li a{
+    color: #fff !important;
+}
+.navbar ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+.navbar ul li ul li:hover::after{
+    width: 0;
+}
+
+
+
+
+/* -----------slider---------- */
+
+
+
+.slider{
+    background-color: #f6f9fc;
+    overflow: hidden;
+    position: relative;
+}
+.slider h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: -85px;
+    margin-bottom: 30px;
+}
+.slider p {
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+.slider a {
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #3763eb;
+    transition: .5s;
+}
+.slider a:hover{
+    color:#3763eb ;
+    background-color: #fff;
+}
+.slider_inner{
+    height: 685px;
+}
+.slider img {
+    height: 900px;
+    width: 950px;
+    border-radius: 50%;
+    position: absolute;
+    top: -215px;
+}
+
+
+
+    /* ------------------service_section--------------- */
+
+
+
+
+
+.service_section{
+    padding: 50px 0 90px;
+}
+.service_section h6{
+    color: #9e90ec;
+    margin-bottom: 25px;
+}
+.service_section h2{ 
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 45px;
+    position: relative;
+}
+.service_section h2::after{
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color:#9e90ec;
+    position: absolute;
+    top: 110%;
+    left: 5px;
+}
+.service_section .service_p{
+    margin-bottom: 60px;
+}
+.cards{
+    background: #f9fcff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 13px #ddd;
+    padding: 20px;
+    transition: .5s;
+}
+.cards:hover{
+    background-color:#5252f0;
+    transform: scale(1.02);
+    color: #fff;
+
+}
+.cards:hover span::after{
+    width: 50px;
+    background-color: #fff;
+}
+.cards:hover span{
+    background-color: #fff;
+    color: #5252f0;
+}
+.cards:hover span i{
+    color: #5252f0;
+}
+.cards h3{
+    font-size: 20px;
+}
+.cards span{
+    width: 60px;
+    height: 60px;
+    background: #5252f0;
+    display: inline-block;
+    border-radius: 50% 50% 50% 0;
+    line-height: 70px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    transition: .5s;
+}
+.cards span::after{
+    content: "";
+    width: 29px;
+    height: 4px;
+    background-color:#9e90ec;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    transition: .5s;
+}
+.cards span i{
+    color: #fff;
+    font-size: 25px;
+    transition: .5s;
+}
+.cards p{}
+.cards_1{
+    position: relative;
+}
+
+.cards_1 .image{
+    position: absolute;
+    top: 82px;
+    left: -59px;
+}
+
+
+
+
+
+/* -----------------animation_section------------- */
+
+
+
+.animation_section{
+    background-image: url(img/video-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:120px 0;
+    position: relative;
+    z-index: 1;
+}
+.animation_section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #091d2e;
+    opacity: .9;
+    z-index: -1;
+}
+.animation_section h6{
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.animation_section h2{
+    font-size: 39px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.animation_section p {
+    color: #fff;
+    font-size: 16px;
+}
+.animation_section a{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+    line-height: 125px;
+    margin-top: 80px;
+    position: relative;
+
+}
+.animation_section a::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #fff;
+    animation: play 2s ease-out infinite;
+}
+.animation_section a::before{
+    content: "";
+    width: 110%;
+    height: 110%;
+    border-radius: 50%;
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    border: 1px solid #fff;
+    animation: play 2s ease-out infinite;
+}
+@keyframes play {
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    25%{
+        transform: scale(1.2);
+        opacity: .7;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: .5;
+    }
+    75%{
+        transform: scale(1.7);
+        opacity: .2;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+.animation_section a span{
+    font-size: 28px;
+}
